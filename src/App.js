@@ -50,13 +50,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
-          <section>
-            <Search asin={this.state.asin} onSearchChange={this.onSearchChange} onSearchSubmit={this.onSearchSubmit} isLoading={this.state.loading} />
-            <p className=".is-danger">{this.state.error}</p>
-          </section>
-          <section>
+          <Search asin={this.state.asin} onSearchChange={this.onSearchChange} onSearchSubmit={this.onSearchSubmit} isLoading={this.state.loading} />
+          <p className=".is-danger">{this.state.error}</p>
           <Table products={this.state.products} isLoading={this.state.loading} />
-          </section>
         </div>
       </div>
     )

@@ -14,9 +14,7 @@ const TableRow = ({ product }) => {
 const Table = ({ products, isLoading }) => {
   return (
     <div className="container is-fluid">
-      <div className="lds-ring"/>
-      {isLoading ?
-        (<div/>) :
+      {!isLoading &&
         (<table key='table' className="table is-striped is-fullwidth">
           <tbody key='tbody'>
             <tr key='header'>
